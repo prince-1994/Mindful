@@ -10,4 +10,11 @@ import UIKit
 
 class MainVCCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    func setValues(text : String ,backgroundColor : UIColor){
+        nameLabel.text = text
+        nameLabel.backgroundColor = UIColor.clear
+        self.backgroundColor = backgroundColor
+    }
 }
